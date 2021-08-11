@@ -1,0 +1,43 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.input-container {
+  max-width: 500px;
+  min-width: 280px;
+  width: 100%;
+  margin: 0px 20px;
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 0.5px solid #cdcdcd;
+}
+
+.legend {
+  position: relative;
+  top: 12px;
+  left: 10px;
+  width: fit-content;
+  font-size: 12px;
+  background: white;
+  padding: 5px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #3f3f3f;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 1px 1px black;
+    padding: 10px 25px;
+    margin: 20px;
+}
