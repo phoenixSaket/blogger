@@ -40,4 +40,11 @@
     box-shadow: 0 0 1px 1px black;
     padding: 10px 25px;
     margin: 20px;
+    cursor: pointer;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
