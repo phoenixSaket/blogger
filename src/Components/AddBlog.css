@@ -1,0 +1,158 @@
+.add-blog-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  box-shadow: 0 0 10px #cdcdcdcd;
+  /* height: 300px; */
+  border-radius: 5px;
+}
+
+.display {
+  width: 50%;
+  border-left: 1px solid #cdcdcdcd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  box-sizing: border-box;
+  height: 300px;
+  overflow: auto;
+  font: 400 13.3333px Arial;
+}
+
+.add-blog-container .title-add-blog {
+  padding: 15px;
+  background-color: #137576;
+  color: #ebd8c9;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px 5px 0 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  resize: vertical;
+}
+
+.content:focus-visible {
+  outline: none;
+}
+
+.content-controls {
+  padding: 10px;
+  background-color: #137576;
+  color: #ebd8c9;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+  justify-content: space-around;
+}
+
+.content-controls span {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.content-controls .active {
+  background-color: #ffffffbb;
+  border-radius: 2px;
+  color: #1f1f1f;
+}
+
+.content-add-blog {
+  display: flex;
+}
+
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input-blog {
+  margin-top: 10px;
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.display-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.display-subtitle {
+  font-size: 17px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  /* color: #137576; */
+  font-weight: 600;
+  background: #ebd8c9 !important;
+  cursor: pointer;
+}
+
+input[type = "file"] {
+    width: 100px;
+}
+
+::file-selector-button {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  /* color: #137576; */
+  font-weight: 600;
+  background: #ebd8c9 !important;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.toggle-container {
+    height: 100%;
+    width : max-content;
+    padding: 2px 5px;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ebd8c93f; */
+}
+
+.togglers {
+    width: 30px;
+    height: auto;
+}
+
+.red {
+    color: #FFB1B1
+}
+
+.green {
+    color: #78D8AA;
+}

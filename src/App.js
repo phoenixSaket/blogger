@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Components/ScrollBar.css";
 import "./Components/CreateAccount.css";
 import "./Components/Login.css";
 import React, { useState } from "react";
@@ -15,7 +16,7 @@ function App() {
   const [userDataEmail, setUserDataEmail] = useState("");
   const [userDataPassword, setUserDataPassword] = useState("");
 
-  let id = 0;
+  const [id, setId] = useState(0);
 
   function submitLogin() {
     console.log({ user: user, pass: password });
@@ -26,7 +27,7 @@ function App() {
       })
       .then((response) => {
         console.log("Login Response", response);
-        id = response.data.id;
+        setId(response.data.id);
         if (response.status === 200) setIsLoggedIn(true);
       })
       .catch((error) => {
@@ -62,6 +63,8 @@ function App() {
       email.classList.add("invalid");
     }
 
+    let errors = 0;
+
     if (isValid) {
       axios
         .post("http://localhost:8000/api/addUser/", {
@@ -78,8 +81,27 @@ function App() {
           console.log(response);
         })
         .catch((error) => {
+          errors = errors + 1;
           console.log(error);
         });
+
+      if (errors === 0) {
+        axios
+          .get("http://localhost/api/getMaxID")
+          .then((response) => {
+            console.log(id);
+            setId(response.data.id);
+          })
+          .catch((error) => {
+            errors = errors + 1;
+            console.log("Error : ", error);
+          });
+      }
+    }
+
+    if (errors === 0) {
+      setIsCreateAccount(false);
+      setIsLoggedIn(true);
     }
   }
 
