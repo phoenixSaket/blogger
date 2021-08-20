@@ -9,10 +9,10 @@ function Blog(props) {
         <div className="blog" key={blog.id}>
           <div className="title">{blog.title}</div>
           <div className="subtitle">{blog.subtitle}</div>
-          <div
+          <pre
             className="display-blog"
             dangerouslySetInnerHTML={{ __html: blog.content }}
-          ></div>
+          ></pre>
           <div className="like-date">
             <div className="likes">{blog.likes}&nbsp;Likes</div>
             <div className="date">{blog.date}</div>

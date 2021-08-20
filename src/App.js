@@ -111,8 +111,9 @@ function App() {
       {!isLoggedIn && !isCreateAccount && (
         <div className="login-container">
           <div className="input-container">
-            <legend className="legend">Username</legend>
+            {/* <legend className="legend">Username</legend> */}
             <input
+              placeholder="Username"
               type="text"
               value={user}
               onChange={(e) => setUser(e.target.value)}
@@ -121,8 +122,9 @@ function App() {
           </div>
 
           <div className="input-container">
-            <legend className="legend">Password</legend>
+            {/* <legend className="legend">Password</legend> */}
             <input
+              placeholder="Password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -147,8 +149,9 @@ function App() {
         <div className="create-account-container">
           <div className="title">Create Account</div>
           <div className="input-container">
-            <legend className="legend">Name</legend>
+            {/* <legend className="legend">Name</legend> */}
             <input
+              placeholder="Name"
               type="text"
               value={userDataName}
               onChange={(e) => setUserDataName(e.target.value)}
@@ -156,8 +159,9 @@ function App() {
             ></input>
           </div>
           <div className="input-container">
-            <legend className="legend">Username</legend>
+            {/* <legend className="legend">Username</legend> */}
             <input
+              placeholder="Username"
               type="text"
               value={userDataUserName}
               onChange={(e) => setUserDataUserName(e.target.value)}
@@ -165,8 +169,9 @@ function App() {
             ></input>
           </div>
           <div className="input-container">
-            <legend className="legend">Email</legend>
+            {/* <legend className="legend">Email</legend> */}
             <input
+              placeholder="Email"
               id="userEmail"
               type="email"
               value={userDataEmail}
@@ -175,8 +180,9 @@ function App() {
             ></input>
           </div>
           <div className="input-container">
-            <legend className="legend">Password</legend>
+            {/* <legend className="legend">Password</legend> */}
             <input
+              placeholder="Password"
               type="password"
               value={userDataPassword}
               onChange={(e) => setUserDataPassword(e.target.value)}
