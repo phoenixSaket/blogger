@@ -1,0 +1,24 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width:400px;
+    min-width: 320px;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ffffff6b;
+}
+
+.display-blog {
+    overflow-y: auto;
+    height: 100%;
+    max-height: 300px;
+    min-height: 250px;
+}
+
+.like-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}

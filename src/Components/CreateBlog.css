@@ -1,22 +1,26 @@
 .add-blog-container {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 90%;
+  padding: 5% 10% 25%; 
   box-shadow: 0 0 10px #cdcdcdcd;
   /* height: 300px; */
   border-radius: 5px;
+  position: fixed;
+  background-color: #3f3f3f8f;
+  /* top: 15%; */
 }
 
 .display {
   width: 50%;
   border-left: 1px solid #cdcdcdcd;
-  border-radius: 5px;
   padding: 15px;
   text-align: left;
   box-sizing: border-box;
-  height: 300px;
+  height: inherit;
   overflow: auto;
   font: 400 13.3333px Arial;
+  background-color: white;
 }
 
 .add-blog-container .title-add-blog {
@@ -32,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1f44925b;
 }
 
 .content {
@@ -50,10 +55,12 @@
   background-color: #137576;
   color: #ebd8c9;
   font-weight: 600;
+  font-size: 18px;
   display: flex;
   align-items: center;
   border-radius: 0 0 5px 5px;
   justify-content: space-around;
+  text-shadow: 0px 0px 3px black;
 }
 
 .content-controls span {
@@ -77,6 +84,10 @@
   width: 50%;
 }
 
+.input-blog-container {
+  background-color: white;
+}
+
 .input-blog {
   margin-top: 10px;
   width: 100%;
@@ -85,6 +96,7 @@
   outline: none;
   border: none;
   font-weight: 600;
+  background-color: white;
 }
 
 .display-title {
@@ -106,7 +118,7 @@
 .btn {
   padding: 7px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   letter-spacing: 1px;
   /* color: #137576; */
   font-weight: 600;
@@ -114,14 +126,16 @@
   cursor: pointer;
 }
 
-input[type = "file"] {
-    width: 100px;
+input[type="file"] {
+  width: 100px;
 }
 
 ::file-selector-button {
   padding: 7px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
+  height: 30px;
+  vertical-align: middle;
   /* color: #137576; */
   font-weight: 600;
   background: #ebd8c9 !important;
@@ -134,25 +148,25 @@ input[type = "file"] {
 }
 
 .toggle-container {
-    height: 100%;
-    width : max-content;
-    padding: 2px 5px;
-    /* border-radius: 50%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #ebd8c93f; */
+  height: 100%;
+  width: max-content;
+  padding: 2px 5px;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ebd8c93f; */
 }
 
 .togglers {
-    width: 30px;
-    height: auto;
+  width: 30px;
+  height: auto;
 }
 
 .red {
-    color: #FFB1B1
+  color: #ffb1b1;
 }
 
 .green {
-    color: #78D8AA;
+  color: #78d8aa;
 }

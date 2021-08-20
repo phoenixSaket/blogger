@@ -1,0 +1,38 @@
+.fixed-right-buttom {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+
+.title {
+  margin: 30px;
+}
+
+.btn-create {
+  background-color: white;
+  color: #3f3f3f;
+  font-weight: 600;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 0 5px #000000;
+  padding: 10px 25px;
+  letter-spacing:1px;
+  cursor: pointer;
+}
+
+.red-bg {
+  background-color: #da1c1c;
+  color: white;
+}
+
+.green-bg {
+  background-color: #137576;
+  color: white;
+}
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
